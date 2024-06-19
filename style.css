@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 500px;
+    height: 300px;
+    margin: 100px auto 0;
+    display: flex;
+}
+
+#container img{
+    width: 100%;
+}
+
+.slider {
+	width: 25%;
+	height: 100%;
+	display: flex;
+	background-color: blueviolet;
+	flex-direction: column-reverse;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.slider i{
+    font-size: 30px;
+}

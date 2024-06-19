@@ -21,6 +21,23 @@ let slider = document.createElement("div");
 
 slider.classList.add ("slider");
 
+// creiamo array con tutte le img 
+
+// let imgDaUsare = [
+//     "01.webp" , 
+//     "02.webp" , 
+//     "03.webp" , 
+//     "04.webp" ,
+//     "05.webp" 
+// ]
+
+const myImage = document.createElement("img");
+
+myImage.src = "img 2/01.webp";
+
+container.append(myImage);
+
+
 // aggiungiamo le frecce allo slider
 
 let arrowDown = document.createElement("i");
@@ -36,6 +53,14 @@ arrowUp.classList.add("fa-solid" , "fa-arrow-up");
 container.append(slider);
 
 slider.append(arrowDown , arrowUp);
+
+// Aggiungiamo il click alle freccie
+
+arrowUp.addEventListener("click" ,
+    function(){
+
+    }
+)
 
 // Milestone 2:
 // Aggiungere il **ciclo infinito** del carosello. Ovvero se la miniatura attiva è la prima e l’utente clicca la freccia verso destra, la miniatura che deve attivarsi sarà l’ultima e viceversa per l’ultima miniatura se l’utente clicca la freccia verso sinistra
